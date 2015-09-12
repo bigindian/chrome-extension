@@ -1,14 +1,26 @@
 {
   "manifest_version": 2,
-  "name": "Fashionable New Tab Page",
-  "description": "When opening a new tab, see a beautiful image from Gilt.com",
+  "name": "The Big Indian News",
+  "description": "A share button for quickly submitting links to the thebigindian.news",
   "version": "1.0",
-  "chrome_url_overrides" : {
-    "newtab" : "newTab.html"
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://thebigindian.news/"
+  ],
+  "background": {
+    "scripts": ["background.js"]
   },
+  "browser_action": {
+    "default_icon": "images/favicon-16.png",
+    "default_title": "Share this page"
+  },
+  // "chrome_url_overrides" : {
+  //   "newtab" : "index.html"
+  // },
   "icons" : {
-    "16" : "images/icon-16.png",
-    "48" : "images/icon-48.png",
-    "128" : "images/icon-128.png"
+    "16" : "images/favicon-16.png",
+    "48" : "images/favicon-57.png",
+    "128" : "images/favicon-144.png"
   }
 }

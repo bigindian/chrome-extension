@@ -17,4 +17,3 @@ var gulp = require("./gulp")(dependencies);
 
 gulp.task("build", ["coffee", "sass", "jade", "bower"])
 gulp.task("default", ["build"]);
-
